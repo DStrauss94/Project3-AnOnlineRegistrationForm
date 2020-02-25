@@ -1,0 +1,40 @@
+.navigation{
+    background-color:rgb(6, 27, 47);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.section1{
+    text-align: center;
+    
+}
+
+
+
+p{
+    color: grey;
+}
+
+h4{
+    color: grey;
+}
+
+input{
+    background-color: lightgray;
+}
+
+
+
+
+@media(min-width: 768px){
+    body{
+        text-align: center;
+    }
+
+
+
+
+
+} 
+
