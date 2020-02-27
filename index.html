@@ -24,17 +24,17 @@
         </div>
 
         <form action="index.html" method="post" class="form">
-            <fieldset>
-                <legend>Contact Information</legend>
+            
+                <legend><strong>Contact Information</strong></legend>
 
                 <div class="form-example">
                     <label for="name" >Full Name <br></label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" placeholder="Required" required>
                 </div>
     
                       <div class="form-example">
                         <label for="email">Email Address<br></label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="Required" required>
                         
                         </div>
     
@@ -53,9 +53,10 @@
                             <input type="text" name="city" id="city" >
                       </div>
     
-                      <div class="form-example">
+                      <div class="form-example" id="states">
                             <label for="state">State<br></label>
                             <select name="states" form="states">
+                                    <option disabled selected value="">Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
@@ -115,10 +116,10 @@
                             <input type="text" name="zip" id="zip" >
                       </div>
     
-            </fieldset>
+            
 
-            <fieldset>
-                <legend>Newsletter</legend>
+            
+                <legend><strong>Newsletter</strong></legend>
                 <p>Select the newsletters you would like to receive</p>
                   <input type="checkbox" name="htmlNews" value="htmlNews">HTML News<br>
                   <input type="checkbox" name="cssNews" value="cssNews">CSS News<br>
@@ -133,7 +134,7 @@
                   <textarea rows="4" cols="50" name="comment"></textarea><br>
 
                   <button type="submit">Sign Up</button>
-            </fieldset>
+            
             
                   
                   
