@@ -10,6 +10,7 @@
     margin: 1em;
 }
 
+
 .section1{
     text-align: center;
     border-style: solid;
@@ -62,6 +63,34 @@ input[type=text]{
     background-color: lightgray;
     opacity: .5;
 }
+
+/*https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
+  *Solution contributed by adrift
+*/
+input[type=text]:focus{
+    outline: none !important;
+    border:1px solid navy;
+    box-shadow: 0 0 10px rgb(4, 42, 83);
+}
+
+/*https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
+  *Solution contributed by adrift
+*/
+input[type=email]:focus{
+    outline: none !important;
+    border:1px solid navy;
+    box-shadow: 0 0 10px rgb(4, 42, 83);
+}
+
+
+#states:focus{
+    outline: none !important;
+    border:1px solid navy;
+    box-shadow: 0 0 10px rgb(4, 42, 83);
+}
+
+
+
 input[type=email]{
     border-radius: 5px ;
     margin-top: 10px;
