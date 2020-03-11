@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.overallMargin{
+    margin: 1em;
+}
+
 .section1{
     text-align: center;
     border-style: solid;
