@@ -1,7 +1,8 @@
 .navigation{
     background-color:rgb(6, 27, 47);
     color: white;
-    padding: 1em;
+    padding: .5em;
+    font-size: .9em;
     text-align: center;
 }
 
@@ -22,6 +23,10 @@
     font-size: smaller;
 }
 
+body{
+    margin: 0;
+}
+
 legend{
     
     padding-top: 1em;
@@ -38,6 +43,7 @@ label{
 
 p{
     color: grey;
+    margin-bottom: 2em;
 }
 
 h4{
@@ -69,6 +75,26 @@ input[type=radio]{
     margin-bottom: 15px;
 }
 
+button[type=submit]{
+    margin-top: 1.25em;
+    color: white;
+    background-color: teal;
+    opacity: .8;
+    border-radius: 5px;
+    width: 100%;
+    height: 3.5em;
+    font-size: 1em;
+    
+
+}
+
+footer{
+    margin-top: 1.3em;
+    text-align: center;
+}
+
+
+
 
 select{
     border-radius: 5px ;
@@ -76,6 +102,15 @@ select{
     height: 35px;
     background-color: lightgray;
     opacity: .4;
+}
+
+textarea{
+    height:6em;
+    width: 100%;
+    background-color: lightgray;
+    border-radius: 5px ;
+    opacity: .5;
+
 }
 
 #zip{
