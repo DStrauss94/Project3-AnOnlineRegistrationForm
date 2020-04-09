@@ -7,7 +7,9 @@
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="Css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    </head>
+        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">  
+      </head>
 
     <body>
 
@@ -21,7 +23,7 @@
             
             <div class="section1">
                 <h2>Signup for our newsletter</h2>
-                <p>Get the latest news on how your code is doing right in you inbox.</p>
+                <p id="firstP">Get the latest news on how your code is doing right in you inbox.</p>
             
             </div>
     
@@ -54,11 +56,16 @@
                                 <label for="city">City<br></label>
                                 <input type="text" name="city" id="city" >
                           </div>
-        
+
                           <div class="form-example" id="states">
+                              <div class="selectStates">
+                                
                                 <label for="state">State<br></label>
-                                <select name="states" form="states">
-                                        <option disabled selected value="">Choose State</option>
+                                <select name="states" form="states" class="fa">
+                                  
+                                        <option id="headSelect" selected >Choose State &#xf338; </option>
+                                       
+                                    
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
                                         <option value="AZ">Arizona</option>
@@ -110,7 +117,12 @@
                                         <option value="WV">West Virginia</option>
                                         <option value="WI">Wisconsin</option>
                                         <option value="WY">Wyoming</option>
+                                        
                                 </select>
+
+                                
+
+                              </div>
                           </div>
         
                           <div class="form-example">
@@ -124,26 +136,32 @@
                     <legend><strong>Newsletter</strong></legend>
                     <p>Select the newsletters you would like to receive</p>
 
-                      <label class="container">HTML News
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                      
-                      <label class="container">CSS News
-                          <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                      
-                      <label class="container">Javascript News
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
+                    <label class="checkContainer">HTML News
+                      <input type="checkbox" >
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkContainer">CSS News
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkContainer">JavaScript News
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>      
                       
                       
 
                       <p>Newsletter format</p>
-                      <input type="radio" name="format" value="html">HTML<br>
-                      <input type="radio" name="format" value="plainText">Plain Text
+                      <label class="radioContainer">HTML
+                        <input type="radio" name="radio">
+                        <span class="radioCheckmark"></span>
+                      </label>
+                      <label class="radioContainer">Plain Text
+                        <input type="radio" name="radio">
+                        <span class="radioCheckmark"></span>
+                      </label>
                       
     
                       <p>Other topics you would like to hear about</p>
@@ -151,8 +169,7 @@
     
                       <button type="submit">Sign Up</button>
                 
-                
-                      
+                   
                       
             </form>
             
