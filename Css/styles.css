@@ -28,43 +28,37 @@
     margin-top: 1em;
 }
 
+/* State Select and Icon */
+
 .selectStates select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
-  
-    
-
- 
-    
+-webkit-appearance: none;
+border-radius: 5px ;
+width: 100%;
+height: 35px;
+background-color: lightgray;
+opacity: .4;
 }
 
-select{
-    font-family: 'FontAwesome', 'Font Awesome 5 Free';
+.selectStates:before{
+    content: "\f338";
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    /* top:50;
+    right:1; */
+    text-align: center;
+    margin-top: .7em;
     font-weight: 900;
+}
+.fa{
+  padding-left: 1.5em;
   
 }
 
-.fa option {
-
-    font-weight: 600;
+.fa select{
+  margin-left: 93%;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------------------- */
 
 ::placeholder{
     text-align: right;
@@ -303,13 +297,7 @@ footer{
 
 
 
-select{
-    border-radius: 5px ;
-    width: 100%;
-    height: 35px;
-    background-color: lightgray;
-    opacity: .4;
-}
+
 
 textarea{
     height:6em;
