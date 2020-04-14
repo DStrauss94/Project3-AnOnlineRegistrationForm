@@ -39,14 +39,17 @@ background-color: lightgray;
 opacity: .4;
 }
 
-.selectStates:before{
+/* SPECIAL THANKS TO JOHN SKEEN HERE! */
+.selectStates:after{
     content: "\f338";
     position: absolute;
     font-family: 'Font Awesome 5 Free';
     text-align: center;
     margin-top: .7em;
     font-weight: 900;
+    margin-left: -15px;
 }
+
 .fa{
   padding-left: 1.5em;
   
