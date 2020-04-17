@@ -327,7 +327,9 @@ textarea{
 
 
 
-
+fieldset {
+  border: 0;
+}
 
 
 
