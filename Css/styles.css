@@ -6,9 +6,8 @@
     text-align: center;
 }
 
-.overallMargin{
-    margin: 1em;
-}
+
+
 
 #firstP{
     color:rgb(195, 195, 195);
@@ -21,7 +20,12 @@
     text-align: center;
     border-style: solid;
     border-width: 0px 0px 5px 0px;
+    margin: 1em;
     
+}
+
+form{
+  margin: 1em;
 }
 
 .form-example{
@@ -48,6 +52,7 @@ opacity: .4;
     margin-top: .7em;
     font-weight: 900;
     margin-left: -15px;
+    pointer-events: none;
 }
 
 .fa{
@@ -71,14 +76,19 @@ body{
     margin: 0;
 }
 
-legend{
+/* legend{
     
     padding-top: 1em;
     margin-top: 4px;
     border-style: solid;
     border-width: 3px 0px 0px 0px;
-}
+} */
 
+.lineOne{
+  border-style: solid;
+  border-width: 3px 0px 0px 0px;
+  margin: -.8em 1em 0 1em;
+}
 
 p{
     color: rgb(80, 80, 80);
@@ -118,7 +128,7 @@ input[type=email]:focus{
 
 
 
-#states:focus{
+.selectStates:focus{
     outline: none !important;
     border:1px solid navy;
     box-shadow: 0 0 10px rgb(4, 42, 83);
@@ -324,17 +334,36 @@ textarea{
 @media(min-width: 768px){
   
 
-    .overallMargin{
-       margin: 5% 25% 25% 25%;
+    form{
+       margin: 1% 25% 25% 25%;
     }
 
     legend{
         padding-top: 2em;
     }
 
+    label{
+      display: inline-block;
+    }
 
 
+    input[type=text]{
+      width: 50%;
+    }
 
+    input[type=email]{
+      width:50%;
+    }
+
+    label[for="state"]{
+      display: inline-block;
+    }
+
+    .selectStates {
+      width: 50%;
+      
+    }
 
 } 
+
 
