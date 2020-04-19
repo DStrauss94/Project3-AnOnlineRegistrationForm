@@ -337,6 +337,15 @@ fieldset {
 
 @media(min-width: 768px){
   
+    .section1{
+      margin-left: 31%;
+      margin-right:31%;
+    }
+
+    .lineOne{
+      margin-left: 31%;
+      margin-right:31%;
+    }
 
     form{
        margin: 1% 25% 5% 25%;
@@ -376,17 +385,18 @@ fieldset {
 
     #zip{
       margin-left: 2.4em;
+      width: 20%;
     }
 
  
-    .selectStates {
+    /* .selectStates {
       width: 100%;
       
       
-}
+} */
 
 #stateLabel{
-  width: 45%;
+  width: 45.5%;
   margin-left: 4.5em;
   margin-top: 10px;
 }
