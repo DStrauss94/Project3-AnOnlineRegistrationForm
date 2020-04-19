@@ -51,9 +51,7 @@ margin: 0;
     position: absolute;
     font-family: 'Font Awesome 5 Free';
     text-align: center;
-    /* margin-top: .7em; */
     font-weight: 900;
-    /* margin-left: -15px; */
     pointer-events: none;
     right: 10px;
     top: 28px;
@@ -65,9 +63,6 @@ margin: 0;
   
 }
 
-.fa select{
-  margin-left: 93%;
-}
 
 /* ----------------------------------------------- */
 
@@ -385,22 +380,23 @@ fieldset {
 
  
     .selectStates {
-      width: 45%;
-      display: inline-block;
+      width: 100%;
+      
       
 }
 
-
-
-label[for="state"]{
-display: inline-block;
-
+#stateLabel{
+  width: 45%;
+  margin-left: 4.5em;
+  margin-top: 10px;
 }
 
 
 
 .selectStates::after {
- right: 6em;
+ right: 23rem;
+ top: 45%
+
   
 }
 
