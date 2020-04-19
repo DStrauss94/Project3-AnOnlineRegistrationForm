@@ -325,7 +325,7 @@ textarea{
 }
 
 #zip{
-    width:25%;
+    width:40%;
     margin-bottom: 2em;
 }
 
@@ -348,23 +348,27 @@ fieldset {
       
     }
 
+    .form-example{
+      width: 100%;
+    }
+
     legend{
         padding-top: 2em;
     }
 
     label{
       display: inline-block;
-      padding-right: 3em;
+      padding-right: 1em;
     }
 
 
     input[type=text]{
-      width: 37%;
+      width: 45%;
 
     }
 
     input[type=email]{
-      width:37%;
+      width:45%;
     }
 
     #city{
@@ -375,21 +379,35 @@ fieldset {
       margin-left: 1.6em;
     }
 
-    label[for="state"]{
+    #zip{
+      margin-left: 2.4em;
+    }
+
+ 
+    .selectStates {
+      width: 45%;
       display: inline-block;
       
-    }
+}
 
-    .selectStates {
-      width: 37%;
-      
-      
-    }
 
-    .form-example{
-      width: 175%;
-      
 
+label[for="state"]{
+display: inline-block;
+
+}
+
+
+
+.selectStates::after {
+ right: 6em;
+  
+}
+
+  fieldset{
+      width: 75%;
+      margin: auto;
+      display: block;
     }
 
  
