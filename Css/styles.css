@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 .navigation{
     background-color:rgb(6, 27, 47);
     color: white;
@@ -5,9 +9,6 @@
     font-size: .9em;
     text-align: center;
 }
-
-
-
 
 #firstP{
     color:rgb(195, 195, 195);
@@ -26,6 +27,7 @@
 
 form{
   margin: 1em;
+  
 }
 
 .form-example{
@@ -33,35 +35,64 @@ form{
     position: relative;
 }
 
+
+select{
+  -webkit-appearance: none;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  height:35px;
+  background-color: lightgray;
+  opacity: .4;
+  
+
+
+}
+
+select:after{
+  content: "\f338";
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  width: 100%;
+  
+  
+}
+
+
+
 /* State Select and Icon */
 
-.selectStates select{
+/* .selectStates {
+
 -webkit-appearance: none;
 border-radius: 5px ;
 width: 100%;
 height: 35px;
 background-color: lightgray;
 opacity: .4;
-margin: 0; 
-}
+margin-top: 1em; 
+position: relative;
+} */
 
 /* SPECIAL THANKS TO JOHN SKEEN HERE! */
-.selectStates:after{
+/* .selectStates:after{
     content: "\f338";
     position: absolute;
     font-family: 'Font Awesome 5 Free';
-    text-align: center;
     font-weight: 900;
     pointer-events: none;
     right: 10px;
     top: 28px;
 
-}
+} */
 
 .fa{
   padding-left: 1.5em;
   
 }
+
+
 
 
 /* ----------------------------------------------- */
@@ -71,18 +102,6 @@ margin: 0;
     padding-right: 1em;
     font-size: smaller;
 }
-
-body{
-    margin: 0;
-}
-
-/* legend{
-    
-    padding-top: 1em;
-    margin-top: 4px;
-    border-style: solid;
-    border-width: 3px 0px 0px 0px;
-} */
 
 .lineOne{
   border-style: solid;
@@ -128,7 +147,7 @@ input[type=email]:focus{
 
 
 
-.selectStates:focus{
+select:focus{
     outline: none !important;
     border:1px solid navy;
     box-shadow: 0 0 10px rgb(4, 42, 83);
@@ -305,11 +324,6 @@ footer{
     text-align: center;
 }
 
-
-
-
-
-
 textarea{
     height:6em;
     width: 100%;
@@ -345,6 +359,19 @@ fieldset {
     .lineOne{
       margin-left: 31%;
       margin-right:31%;
+    }
+
+    select{
+      width: 45%;
+      margin-left: 4.8em;
+    }
+
+    #state{
+      padding-right: 1em;
+    }
+
+    #chooseState{
+      padding-left: 1em;
     }
 
     form{
@@ -387,28 +414,6 @@ fieldset {
       margin-left: 2.4em;
       width: 20%;
     }
-
- 
-    /* .selectStates {
-      width: 100%;
-      
-      
-} */
-
-#stateLabel{
-  width: 45.5%;
-  margin-left: 4.5em;
-  margin-top: 10px;
-}
-
-
-
-.selectStates::after {
- right: 23rem;
- top: 45%
-
-  
-}
 
   fieldset{
       width: 75%;
