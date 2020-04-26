@@ -32,15 +32,14 @@ form{
 
 .form-example{
     margin-top: 1em;
-    /* position: relative; */
     display: flex;
     flex-wrap: wrap;
-  align-items: center;
+    align-items: center;
 }
 
 
 
-/* State Select and Icon */
+/* State Select */
 
 
 .selectStates{
@@ -60,16 +59,15 @@ select{
   width: 100%;
   height: 34px;
   border-radius:  5px;
-  -webkit-appearance: none;
   box-sizing: border-box;
  
 
 
   
 }
+/* When Attempting to do the Custom Select DropDown Icon */
 
-
-.selectStates ::after{
+/* .selectStates ::after{
   content: "\f338";
  position: absolute; 
  display: inline-block;
@@ -79,11 +77,8 @@ font-family: 'Font Awesome 5 Free';
  pointer-events: none;
  right: 10px;
  top: 28px;
-
- 
-
 } 
-
+*/
 
 /* ----------------------------------------------- */
 
@@ -115,6 +110,9 @@ input[type=text]{
     height: 30px;
     background-color: lightgray;
     opacity: .5;
+    text-align: right;
+    padding-right: 15px;
+
 }
 
 /*https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
@@ -152,6 +150,8 @@ input[type=email]{
     height: 30px;
     background-color: lightgray;
     opacity: .5;
+    text-align: right;
+    padding-right: 15px;
 }
 /* ---------------------------------------------------------------------- */
 
@@ -320,7 +320,6 @@ textarea{
     background-color: lightgray;
     border-radius: 5px ;
     opacity: .5;
-
 }
 
 #zip{
@@ -332,12 +331,6 @@ textarea{
 #zipLabel{
   margin-right: 55%;
 }
-
-
-
-
-
-
 fieldset {
   border: 0;
   padding: 0;
@@ -368,12 +361,6 @@ fieldset {
       margin-left: 3.8em;
     }
 
-    #state{
-      padding-right: 1em;
-    }
-
-  
-
     form{
        margin: 1% 25% 5% 25%;
       
@@ -381,6 +368,7 @@ fieldset {
 
     .form-example{
       width: 100%;
+      flex-flow: row wrap;
     }
 
     legend{
@@ -396,14 +384,13 @@ fieldset {
       padding-bottom: 1em;
     }
 
-
     input[type=text]{
-      width: 45%;
+      width: 50%;
 
     }
 
     input[type=email]{
-      width:45%;
+      width:50%;
     }
 
     #city{
