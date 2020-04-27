@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="Css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">      
       </head>
@@ -46,7 +46,7 @@
         
                           <div class="form-example">
                                 <label for="number">Phone Number<br></label>
-                                <input type="text" name="number" id="number">
+                                <input type="tel" name="number" id="number">
                           </div>
         
                           <div class="form-example">
@@ -63,9 +63,9 @@
 
                           <div class="form-example">                        
                               
-                                <label for="state" >State<br></label>
+                                <label for="states">State<br></label>
                                 <div class="selectStates">
-                                <select name="states">
+                                <select name="states" id="states">
                                         <option selected >Choose State</option>
                                         <option value="AL">Alabama</option>
                                         <option value="AK">Alaska</option>
@@ -135,17 +135,17 @@
                     <p>Select the newsletters you would like to receive</p>
 
                     <label class="checkContainer">HTML News
-                      <input type="checkbox" >
+                      <input type="checkbox" name="htmlCheck" id="htmlCheck" >
                       <span class="checkmark"></span>
                     </label>
                     
                     <label class="checkContainer">CSS News
-                      <input type="checkbox">
+                      <input type="checkbox" name="cssCheck" id="cssCheck">
                       <span class="checkmark"></span>
                     </label>
                     
                     <label class="checkContainer">JavaScript News
-                      <input type="checkbox">
+                      <input type="checkbox" name="javascriptCheck" id="javascriptCheck">
                       <span class="checkmark"></span>
                     </label>      
                       
@@ -153,17 +153,18 @@
 
                       <p>Newsletter format</p>
                       <label class="radioContainer">HTML
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radioHtml" id="radioHtml">
                         <span class="radioCheckmark"></span>
                       </label>
                       <label class="radioContainer">Plain Text
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radioText" id="radioText">
                         <span class="radioCheckmark"></span>
                       </label>
                       
     
-                      <p>Other topics you would like to hear about</p>
-                      <textarea rows="4" cols="50" name="comment"></textarea><br>
+                      <label>Other topics you would like to hear about
+                      <textarea id="topics" rows="4" cols="50" name="comment"></textarea><br>
+                      </label>
     
                       <button type="submit">Sign Up</button>
                     </fieldset>  
