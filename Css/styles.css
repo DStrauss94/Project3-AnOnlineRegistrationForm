@@ -356,27 +356,24 @@ fieldset {
 @media(min-width: 768px){
   
     .section1{
-      margin-left: 31%;
-      margin-right:31%;
+      margin-left: 20%;
+      margin-right:20%;
     }
 
     .lineOne{
-      margin-left: 31%;
-      margin-right:31%;
-    }
-
-    select{
-      width: 100%;
-      
+      margin-left: 20%;
+      margin-right:20%;
     }
 
     .selectStates{
-      width: 45%;
-      margin-left: 4em;
+      flex-basis: 64%;
+      
+  
     }
 
+   
     form{
-       margin: 1% 25% 5% 25%;
+       margin: 1% 20% 5% 20%;
       
     }
 
@@ -390,47 +387,42 @@ fieldset {
     }
 
     label{
-      display: inline-block;
-      padding-right: 1em;
+      width: 160px;
+      
+     
     }
     #zipLabel{
-      margin-right: 0;
       padding-bottom: 1em;
+      margin: 0;
     }
 
     input[type=text]{
-      width: 50%;
+      flex-basis: 60%;
+      align-self: right;
+      
+      
 
     }
 
-    input[type=tel]{
-      width: 50%;
+   input[type=email]{
+      flex-basis: 60%;
+      
+      
     }
-
-    input[type=email]{
-      width:50%;
-    }
-
-    #city{
-      margin-left: 5.5em ;
-    }
-
-    #name{
-      margin-left: 2.3em;
-    }
-
     #email{
-      margin-left: .5em;
+      width: 160px;
+    }
+
+    #number{
+      flex-basis: 60%;
     }
 
     #zip{
-      margin-left: 3em;
-      width: 20%;
+      flex-basis: 20%;
     }
 
   fieldset{
-      width: 75%;
-      margin: auto;
+      width: 100%;
       display: block;
     }
 
