@@ -34,7 +34,7 @@ form{
 .form-example{
     margin-top: 1em;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -58,7 +58,7 @@ select{
   border: none;
   padding-top: 3px;
   width: 100%;
-  height: 34px;
+  height: 35px;
   border-radius:  5px;
   box-sizing: border-box;
  
@@ -110,8 +110,8 @@ input[type=text]{
     height: 30px;
     background-color: lightgray;
     opacity: .5;
-    text-align: right;
-    padding-right: 15px;
+    
+    
 
 }
 
@@ -123,9 +123,8 @@ input[type=tel]{
   height: 30px;
   background-color: lightgray;
   opacity: .5;
-  text-align: right;
-  padding-right: 15px;
-
+  
+  
 }
 
 /*https://stackoverflow.com/questions/16156594/how-to-change-border-color-of-textarea-on-focus
@@ -163,8 +162,8 @@ input[type=email]{
     height: 30px;
     background-color: lightgray;
     opacity: .5;
-    text-align: right;
-    padding-right: 15px;
+    
+    /* padding-right: 15px; */
 }
 /* ---------------------------------------------------------------------- */
 
@@ -368,7 +367,7 @@ fieldset {
     }
 
     .selectStates{
-      flex-basis: 64%;
+      flex-basis: 70.5%;
       
   
     }
@@ -389,7 +388,8 @@ fieldset {
     }
 
     label{
-      width: 160px;
+      flex-basis: 25%;
+      flex-direction: row;
       
      
     }
@@ -399,15 +399,14 @@ fieldset {
     }
 
     input[type=text]{
-      flex-basis: 60%;
-      align-self: right;
+      flex-basis: 70%;
       
       
 
     }
 
    input[type=email]{
-      flex-basis: 60%;
+      flex-basis: 70%;
       
       
     }
@@ -416,7 +415,7 @@ fieldset {
     }
 
     #number{
-      flex-basis: 60%;
+      flex-basis: 70%;
     }
 
     #zip{
